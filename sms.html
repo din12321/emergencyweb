@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMERGENCY NOTIFICATION SYSTEM</title>
+    <link rel="stylesheet" href="style/my.css">
+</head>
+<body>
+  <ul>
+    <li><a href="/index.php">Send Alert</a></li>
+    <li><a href="/sms.html">Send Alert</a></li>
+    <li><a href="/contact.html">Contact</a></li>
+    <li><a href="/logout.php">Logout</a></li>
+  </ul> 
+  <center>
+    <h><font color="white"><b>SMS SENDER</b></font></h>
+    <br>
+    <br>
+    <form action="smsapi.php" method="post">
+        
+        <input type="text" id="number" name="recipient" placeholder="Enter Your Number Start With +63" required>
+        <br>
+        <br>
+        <textarea id="msg" name="message" rows="4" cols="50" placeholder="Enter Your Text Here!" required></textarea>
+        <br>
+        <br>
+
+        <button type="submit">Send SMS</button>
+    </form>
+  </center>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelector("form").addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            // Use fetch to submit the form data to your PHP file
+            fetch(this.action, {
+                method: this.method,
+                body: new FormData(this),
+            })
+                .then(response => response.text())
+                .then(data => {
+                    // Display the response in a specific element with id="response"
+                    var responseElement = document.getElementById("response");
+                    responseElement.innerHTML = "<p>" + data + "</p>";
+                    // You can customize the HTML structure based on your needs
+                })
+                .catch(error => console.error('Error:', error));
+        });
+    });
+</script>
+<center>
+<div id="response" class="response"></div>
+</center>
+</body>
+</html>

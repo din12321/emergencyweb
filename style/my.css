@@ -1,0 +1,194 @@
+body{
+    background: rgb(104, 21, 33);
+    padding:50px;
+}
+  h1{
+    font-family: sans-serif;
+    color: white;
+  }
+  h{
+    font-family: sans-serif;
+    color: white;
+    font-size: 50px;
+  }
+  input{
+    font-family: sans-serif;
+    color: blue;
+    width: 210px;
+    height: 30px;
+  }
+  textarea{
+    font-family: sans-serif;
+    color: green;
+    width: 210px;
+    height: 100px;
+  }
+  button
+  {
+    font-family: sans-serif;
+    color: blue;
+    height: 50px;
+    width: 100px;
+  }
+  span{
+    background-color: rgb(182, 36, 36);
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+  }
+  
+  ul {
+    border:none;
+    list-style-type: none;
+    margin: 0;
+    padding: 5;
+    overflow: hidden;
+    background-color: #333;
+    border-radius: 15px;
+    transition: 0.3s;
+    font-family: arial;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 500px;
+    transition: 0.3s;
+    size: 40px;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+
+   
+.login{
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    background:fixed;
+    cursor: pointer;
+    border-left: none;
+    border-top: none;
+    background-color: rgb(131, 15, 15);
+    color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+    margin-left: 1080px;
+    margin-right: 5px;
+}
+
+.login:hover{
+    background-color: transparent;
+}
+
+.signup{
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    background:fixed;
+    cursor: pointer;
+    border-left: none;
+    border-top: none;
+    background-color: rgb(131, 15, 15);
+    color: white;
+    border-radius: 20px;
+    transition: 0.2s;
+   
+    
+}
+.signup:hover
+{
+    background-color: transparent;
+}
+.image img
+{
+ border-radius: 50px;
+}
+.logout
+{
+  background: lightblue;
+  
+  margin:0 auto;
+  padding:10px;
+  margin-left: 90%;
+  border-radius: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.response
+{
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: italic;
+  font-size: medium;
+  font-weight: 50;
+}
+.container{
+    max-width: 600px;
+    margin:0 auto;
+    padding:50px;
+      background-color: rgba(67, 62, 126, 0.322);
+    box-shadow: rgba(67, 62, 126, 0.322) 0px 7px 29px 0px;
+}
+.form-group{
+    margin-bottom:30px;
+}
+.loginbtn
+{
+ font-family: sans-serif;
+    color: white;
+    height: 40px;
+    width: 100px;
+    background-color: rgba(76, 60, 168, 0.863);
+    border-radius: 15px;
+
+}
+.regbtn
+{
+ font-family: sans-serif;
+    color: white;
+    height: 50px;
+    width: 120px;
+    background-color: rgba(76, 60, 168, 0.863);
+    border-radius: 15px;
+}
+img {
+  border-radius: 50%;
+  box-shadow: #0ca02c;
+}
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+.alink {
+  color: pink;
+  font-size: 20px;
+  font-style: italic;
+  
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: underline;
+}
+a:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+   
